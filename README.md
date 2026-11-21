@@ -4,6 +4,20 @@ Zabbix 7.0 LTS monitoring for a homelab, built entirely through the **Zabbix JSO
 
 Problems are pushed to a phone through **[ntfy](https://ntfy.sh)**, with recovery messages ("✅ RESOLVED … was down 4m") and dependencies so a router outage doesn't also page for every device behind it.
 
+## Screens
+
+**Homelab NOC, "Now" page:** problems by severity, 24 h availability for every host, CPU/RAM gauges, latency, quorum, stale backups, open problems
+![NOC now](images/zbx-noc-now.png)
+
+**Trends:** CPU and memory (24 h), internet latency and loss, web-check response times, a servers table
+![NOC trends](images/zbx-noc-trends.png)
+
+**Reliability:** 7-day availability, the noisiest alerts, and every alert sent to my phone
+![NOC reliability](images/zbx-noc-reliability.png)
+
+**Hosts:** 20 hosts: Proxmox nodes, backup server, NAS, DNS, network gear (SNMP), web apps
+![Hosts](images/zbx-hosts.png)
+
 ## Scripts
 
 | Script | What it builds |
